@@ -13,6 +13,7 @@ def createDict():
     reader = csv.reader(data)
     occu=[]
     perc=[]
+    d= {}
     for row in reader:
         if row[0] != 'Job Class' and  row[0] != 'Total':
             occu.append(row[0])
