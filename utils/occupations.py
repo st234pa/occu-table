@@ -5,16 +5,15 @@
 import random
 import csv
 
-d={}
-occu=[]
-perc=[]
-total=[]
 
 
 #Make the dict
 def createDict():
     data = open('occupations.csv', 'r')
     reader = csv.reader(data)
+    d = {}
+    occu=[]
+    perc=[]
     for row in reader:
         if row[0] != 'Job Class' and  row[0] != 'Total':
             occu.append(row[0])

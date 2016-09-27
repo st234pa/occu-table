@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import occupations
+from utils import occupations
 app = Flask(__name__)
 
 @app.route("/occupations")
